@@ -72,15 +72,16 @@ countEl.textContent = filtered.length + ' item' + (filtered.length !== 1 ? 's' :
 grid.innerHTML = filtered.map(p => `
 <div class="product-card">
   <div class="product-img-wrap">
-    <img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.parentElement.innerHTML='<span class=\\"product-icon\\">${p.icon}</span>'">
+    <img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <span class="product-icon-fallback">${p.icon}</span>
     ${p.popular ? '<span class="badge">Popular</span>' : ''}
   </div>
   <div class="product-body">
     <p class="product-name">${p.name}</p>
     <p class="product-desc">${p.desc}</p>
     <div class="product-footer">
-      <div><span class="price">$${p.price.toFixed(2)}</span><span class="price-old">$${p.orig.toFixed(2)}</span></div>
-      <button class="add-btn" onclick="orderWhatsApp('${p.name.replace(/'/g,"\\'")}',' ${p.price.toFixed(2)}')">Order</button>
+      <div><span class="price">${p.price.toFixed(2)}</span><span class="price-old">${p.orig.toFixed(2)}</span></div>
+      <button class="add-btn" onclick="orderWhatsApp('${p.name.replace(/'/g,&quot;\\'&quot;)}', '${p.price.toFixed(2)}')">Order</button>
     </div>
   </div>
 </div>
