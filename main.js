@@ -81,7 +81,7 @@ grid.innerHTML = filtered.map(p => `
     <p class="product-desc">${p.desc}</p>
     <div class="product-footer">
       <div><span class="price">${p.price.toFixed(2)}</span><span class="price-old">${p.orig.toFixed(2)}</span></div>
-      <button class="add-btn" onclick="orderWhatsApp('${p.name.replace(/'/g,&quot;\\'&quot;)}', '${p.price.toFixed(2)}')">Order</button>
+      <button class="add-btn" onclick="orderWhatsApp(this.dataset.n, this.dataset.p)" data-n="${p.name.replace(/'/g,'')}" data-p="${p.price.toFixed(2)}">Order</button>
     </div>
   </div>
 </div>
