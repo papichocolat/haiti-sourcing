@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Haiti Sourcing — Authentic Haitian groceries delivered to Port-au-Prince."/>
+<title>Haiti Sourcing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="top-banner">
+  <span>Free Shipping Over $75</span>
+  Delivering to Port-au-Prince — Fresh, authentic Haitian groceries
+  <span>30-Day Guarantee</span>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="#">Haiti<span> Sourcing</span></a>
+    <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#products">Shop</a></li>
+      <li><a href="#boxes">Food Boxes</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="nav-cart" href="#">Cart (0)</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-tag">Port-au-Prince Delivery</p>
+      <h1>Send <em>Real Food</em><br>Back Home</h1>
+      <p class="hero-desc">Quality groceries and essentials delivered directly to your family in Port-au-Prince. Sourced with care, shipped with pride.</p>
+      <div class="hero-btns">
+        <a class="btn-primary" href="#products">Shop Now</a>
+        <a class="btn-secondary" href="#boxes">View Food Boxes</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card"><div class="icon">🌾</div><strong>Locally Sourced</strong><span>Authentic products</span></div>
+      <div class="hero-card"><div class="icon">📦</div><strong>Secure Packaging</strong><span>Protected every step</span></div>
+      <div class="hero-card"><div class="icon">🚚</div><strong>PAP Delivery</strong><span>Port-au-Prince only</span></div>
+      <div class="hero-card"><div class="icon">🤝</div><strong>Trusted Service</strong><span>Family-run with care</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- DELIVERY NOTICE -->
+<section class="delivery-notice">
+  <div class="notice-inner">
+    <span class="notice-icon">📍</span>
+    <p>We currently deliver to <strong>Port-au-Prince only.</strong> Orders placed by customers in the US, Canada, or abroad are delivered to your family in PAP.</p>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="section-inner">
+    <div class="sec-header">
+      <h2>All Products</h2>
+      <span class="product-count" id="productCount">42 items</span>
+    </div>
+
+    <!-- FILTER TABS -->
+    <div class="filter-tabs" id="filterTabs">
+      <button class="filter-btn active" data-cat="all">All</button>
+      <button class="filter-btn" data-cat="staples">Staples &amp; Grains</button>
+      <button class="filter-btn" data-cat="dairy">Dairy &amp; Eggs</button>
+      <button class="filter-btn" data-cat="meat">Meat &amp; Fish</button>
+      <button class="filter-btn" data-cat="condiments">Condiments</button>
+      <button class="filter-btn" data-cat="drinks">Drinks</button>
+      <button class="filter-btn" data-cat="packages">Packages</button>
+      <button class="filter-btn" data-cat="other">Other</button>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="section-inner">
+    <div class="sec-header"><h2>How It Works</h2></div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Browse &amp; select</h3>
+        <p>Pick individual items or choose a ready-made food box package.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Place your order</h3>
+        <p>Contact us via WhatsApp or email with your order and recipient details in Port-au-Prince.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>We source &amp; pack</h3>
+        <p>Your order is carefully sourced, verified, and securely packaged for delivery.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h3>Delivered in PAP</h3>
+        <p>Your family receives fresh, quality groceries right at their door in Port-au-Prince.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD BOXES -->
+<section class="boxes" id="boxes">
+  <div class="section-inner">
+    <div class="sec-header">
+      <h2>Food Box Packages</h2>
+    </div>
+    <div class="box-grid">
+
+      <div class="box-card">
+        <p class="box-name">Lamanjay</p>
+        <p class="box-subtitle">Basic Package</p>
+        <p class="box-price">$149<sub>/box</sub></p>
+        <ul class="box-items">
+          <li>Rice (4.5 Mamit)</li>
+          <li>Cooking Oil</li>
+          <li>Red Beans (Mamit)</li>
+          <li>Spaghetti (Kes)</li>
+          <li>Macaroni KèS</li>
+          <li>Tomato Paste</li>
+          <li>Maggi seasoning</li>
+        </ul>
+        <a class="box-btn" href="https://wa.me/50944708000?text=Hi%2C%20I%27d%20like%20to%20order%20the%20Lamanjay%20Basic%20Package" target="_blank">Order via WhatsApp</a>
+      </div>
+
+      <div class="box-card featured">
+        <span class="box-tag">Most Popular</span>
+        <p class="box-name">Lafanmi</p>
+        <p class="box-subtitle">Family Package</p>
+        <p class="box-price">$249<sub>/box</sub></p>
+        <ul class="box-items">
+          <li>Rice 9 Mamit (Gwo Sak)</li>
+          <li>Cooking Oil (large)</li>
+          <li>Red Beans + Black Beans</li>
+          <li>Spaghetti + Macaroni</li>
+          <li>Smoked Salami</li>
+          <li>Bongu Milk 9 CT</li>
+          <li>Tomato Paste + Ketchup</li>
+          <li>Maggi 60 CT + Sugar</li>
+        </ul>
+        <a class="box-btn featured-btn" href="https://wa.me/50944708000?text=Hi%2C%20I%27d%20like%20to%20order%20the%20Lafanmi%20Family%20Package" target="_blank">Order via WhatsApp</a>
+      </div>
+
+      <div class="box-card">
+        <p class="box-name">Kè Kontan</p>
+        <p class="box-subtitle">Premium Package</p>
+        <p class="box-price">$287<sub>/box</sub></p>
+        <ul class="box-items">
+          <li>All Family Package items</li>
+          <li>Alaska Milk 900g</li>
+          <li>Vyann Bèf (beef)</li>
+          <li>Kwis Poul (12 CT)</li>
+          <li>Mayonnaise Mamit</li>
+          <li>Flower Bouquet</li>
+          <li>Priority delivery</li>
+        </ul>
+        <a class="box-btn" href="https://wa.me/50944708000?text=Hi%2C%20I%27d%20like%20to%20order%20the%20K%C3%A8%20Kontan%20Premium%20Package" target="_blank">Order via WhatsApp</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="section-inner contact-inner">
+    <div>
+      <h2>Get in Touch</h2>
+      <p>Questions about your order or delivery in Port-au-Prince? We're here to help.</p>
+      <ul class="contact-list">
+        <li>📧 <a href="mailto:haitisourcing@gmail.com">haitisourcing@gmail.com</a></li>
+        <li>📞 <a href="tel:+50944708000">+509 44 70 8000</a></li>
+        <li>📍 Delivery: Port-au-Prince, Haiti</li>
+      </ul>
+      <a class="whatsapp-btn" href="https://wa.me/50944708000?text=Hi%2C%20I%27d%20like%20to%20place%20an%20order" target="_blank">
+        💬 Order via WhatsApp
+      </a>
+    </div>
+    <form class="contact-form" onsubmit="handleForm(event)">
+      <input type="text" placeholder="Your name" required />
+      <input type="email" placeholder="Your email" required />
+      <textarea rows="4" placeholder="Your message or order details" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+      <p class="form-success" id="formSuccess">Message sent! We'll be in touch soon.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo footer-logo">Haiti<span> Sourcing</span></span>
+        <p>Bridging the distance between you and your family in Port-au-Prince — one grocery box at a time.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#products">Shop</a></li>
+          <li><a href="#boxes">Food Boxes</a></li>
+          <li><a href="#how">How It Works</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Delivery Area</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:haitisourcing@gmail.com">haitisourcing@gmail.com</a></li>
+          <li><a href="tel:+50944708000">+509 44 70 8000</a></li>
+          <li><a href="https://wa.me/50944708000" target="_blank">WhatsApp Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Haiti Sourcing. All rights reserved. Delivering to Port-au-Prince.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
